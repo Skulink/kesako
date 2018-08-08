@@ -1,0 +1,945 @@
+/***********************stylisation du body***************************************/
+
+body{
+	margin: 0;
+	font-family: Arial, Comic Sans MS, Impact, sans-serif;
+}
+
+/***********************stylisation du bouton select***************************************/
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    cursor: pointer;
+    color: rgb(70, 81, 88);
+    font-family: inherit;
+    font-size: 1em;
+    padding-left: 5px;
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(0,93,183);
+	border-radius: 2em;
+    background-color: rgb(250, 250, 250);
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMjAwJyBoZWlnaHQ9JzIwMCcgZmlsbD0iIzAwMDAwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHg9IjBweCIgeT0iMHB4Ij48cGF0aCBmaWxsPSIjMDAwMDAwIiBkPSJNMTIgMThsLTExLjAxOS0xMWgyMi4wMzh6Ii8+PC9zdmc+);
+    background-size: .8em;
+    background-repeat: no-repeat;
+    background-position: calc(100% - .4em) center;
+}
+
+/********************************BARRE DE NAVIGATION********************************************************************************************************/
+
+/*Ensemble de la barre*/
+#navigation{
+	display: block;
+	position: fixed;
+	right: 0;
+	left: 0;
+	top: 0;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+#nav{
+  z-index: 1000;
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	line-height: 20px;
+	overflow: hidden;
+	background-color: rgb(0,93,183);
+}
+
+
+
+/*bouton accueil*/
+#accueil{
+	background-color: rgb(142,196,13);
+	float: left;
+}
+
+#accueil:hover{
+	background-color: rgb(151, 209, 14);
+}
+
+#accueil a{
+	display: block;
+	color: white;
+	font-family: Arial, Comic Sans MS, Impact, sans-serif;
+	text-align: center;
+	padding: 16px 18px;
+	text-decoration: none;
+}
+
+
+
+/*boutons avec la liste des services*/
+.services{
+	float: left;
+}
+
+.services:hover{
+	background-color: rgb(0, 113, 222);
+}
+
+.services a{
+	display: block;
+	color: white;
+	font-family: Arial, Comic Sans MS, Impact, sans-serif;
+	text-align: center;
+	padding: 16px 18px;
+	text-decoration: none;
+}
+
+
+
+/*boutons connexion*/
+#connexion{
+	float: right;
+	right: 0;
+}
+
+#connexion:hover{
+	background-color: rgb(0, 113, 222);
+}
+
+#connexion a{
+	display: block;
+	color: white;
+	font-family: Arial, Comic Sans MS, Impact, sans-serif;
+	text-align: center;
+	padding: 16px 18px;
+	text-decoration: none;
+}
+
+/*bouton deconnexion*/
+#deconnexion{
+  float: right;
+  right: 0;
+}
+
+#deconnexion:hover{
+  background-color: rgb(0, 113, 222);
+}
+
+#deconnexion a{
+  display: block;
+  color: white;
+  font-family: Arial, Comic Sans MS, Impact, sans-serif;
+  text-align: center;
+  padding: 16px 18px;
+  text-decoration: none;
+}
+
+
+/*messages de connexion*/
+#msgIdConnexion{
+  z-index: 1000;
+  margin: auto;
+  text-align: center;
+  width: 80%;
+  padding:5px;
+  margin-top: 55px;
+  border: solid 2px #85B70C;
+  border-radius: 1.5em;
+  background-color: #D7FFA6;
+  color: #85B70C;
+}
+
+#msgIdErreur1{
+  margin: auto;
+  text-align: center;
+  width: 80%;
+  padding:5px;
+  margin-top: 55px;
+  border: solid 2px #A94442;
+  border-radius: 1.5em;
+  background-color: #ECCFCF;
+  color: #A94442;
+}
+
+
+
+
+
+/*liens entre les onglets services et le menu déroulant*/
+.services:hover .conteneur-deroulant{
+	position: absolute;
+	display: block;
+}
+
+
+
+/*conteneur du formulaire de connexion*/
+#id-connexion{
+  z-index: 5;
+	position: fixed;
+	display: block;
+	right: 0;
+	margin-top: 52px;
+	width: 350px;
+	height: 215px;
+	background-color: #f9f9f9;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+
+/*champs contenus dans l'onglet connexion*/
+.info-connex{
+	width: 35%;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	margin-left: 5%;
+	font-family:  Arial, Comic Sans MS, Impact, sans-serif;
+	color: rgb(0,93,183);
+	font-size: 15px;
+}
+
+
+
+/*champs de mot de passe oublié*/
+.missmdp {
+	margin-top: -5px;
+	margin-bottom: 20px;
+  padding-left: 145px;
+	font-family:  Arial, Comic Sans MS, Impact, sans-serif;
+	font-size: 12px;
+}
+
+#missmdp{
+  text-decoration: none;
+  color: rgb(0,93,183);
+	padding: 0 !important;
+}
+
+
+
+.saisie-connex{
+	width: 50%;
+	display: inline-block;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	margin-right: 5%; 
+	font-family:  Arial, Comic Sans MS, Impact, sans-serif;
+}
+
+
+
+#valid-connexion{
+	margin-left: 35%;
+	margin-top: 10px;
+	height: 30px;
+	width: 30%;
+	border: 2px solid rgb(0,93,183);
+	border-radius: 2em;
+	background-color: rgb(0,93,183);
+	color: white;
+	font-family:  Arial, Comic Sans MS, Impact, sans-serif;
+	font-size: 15px;
+}
+
+
+
+/*conteneur des liens logiciels*/
+.conteneur-deroulant{
+	position: absolute;
+	display: none;
+	width: 885px;
+	margin: 0;
+	background-color: #f9f9f9;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+
+/*liens logiciels*/
+.link a{
+	float: left;
+	color: rgb(0, 93, 183);
+	text-decoration: none;
+	padding: 0;
+	font-family:  Arial, Comic Sans MS, Impact, sans-serif;
+	font-size: 14px;
+	width: 220px;
+	height: 50px;
+	line-height: 50px;
+	border-right: 1px solid silver;	
+}
+
+
+
+/*passage de la souris sur les liens logiciels*/
+.conteneur-deroulant .link a:hover{
+	background-color: #f1f1f1;
+}
+
+
+
+
+/***************************************BANDEAU HAUT****************************************************************************/
+
+/*ensemble du bandeau*/
+.bandeau{
+	padding-top: 40px;
+	height: 200px;
+	width: 100%
+}
+
+
+
+/*logo enedis*/
+#container-logo{
+	margin: auto;
+	display: inline-block;
+}
+
+
+
+#logo{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width: 446.25px;
+	height: 133.875px;
+	border: none;
+}
+
+
+
+/************************************BOUTONS ADMIN ****************************************************/
+#droite-logo{
+	display: inline-block;
+	text-align: center;
+	float: right;
+	width: 220px;
+	margin-top: 20px;
+	margin-right: 50px;
+}
+
+
+
+.btn-admin{
+	display: block;
+	background-color: rgb(229, 245, 255);
+	border: 2px solid rgb(0,93,183);
+	border-radius: 2em;
+	width: 220px;
+	margin: 6px;
+	font-family:  Arial, Comic Sans MS, Impact, sans-serif;
+	color: rgb(0,93,183);
+	text-decoration: none;
+}
+
+.btn-admin:hover{
+	background-color: rgb(0,93,183);
+	color: #ffffff;
+}
+
+
+/*********************************** CONTENEUR *******************************************/
+
+.container{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+
+
+/********************colonne de gauche et de droite***********************************/
+
+
+/*conteneur des images kesako*/
+.kesako-img{
+	margin: auto;
+}
+
+
+
+.img{
+	max-width: 100%;
+}
+
+
+
+
+/*titre des deux conteneurs de liens kesako*/
+.kesako-title{
+	font-family:  Arial, Comic Sans MS, Impact, sans-serif;
+	color: rgb(0,93,183);
+}
+
+
+
+hr{
+	color: rgb(0,93,183);
+	width: 100%;
+	margin: auto;
+}
+
+
+
+/*******************************colonne de gauche************************************/
+#col-droite{
+	float: left;
+	width: 21%;
+}
+
+
+
+/*conteneur des liens kesako "commun"*/
+#commun-link{
+	text-align: center;
+	background-color: rgb(204, 235, 255);
+	border: 4px solid rgb(0,93,183);
+	border-radius: 15px;
+}
+
+
+
+/*images correspondant aux liens*/
+.commun-img{
+	margin: 6px;
+	border: none;
+}
+
+
+
+/******************************colonne de droite************************************/
+#col-gauche{
+	float: left;
+	margin-top: 0;
+	width: 21%;
+	padding-top: 240px;
+}
+
+
+
+/*conteneur des liens kesako "domaine"*/
+#domaine-link{
+	text-align: center;
+	background-color: rgb(204, 235, 255);
+	border: 4px solid rgb(0,93,183);
+	border-radius: 15px;
+}
+
+
+/*images correspondant aux liens*/
+.domaine-img{
+	margin: 6px;
+	border: none;
+}
+
+
+/*****************************colonne du centre***************************************/
+#col-centre{
+	text-align: center;
+	float: left;
+	width: 57%;
+}
+
+
+
+/*barre de recherche*/
+#saisie{
+	border: 2px solid rgb(0,93,183);
+	border-radius: 2em;
+	width: 85%;
+	height: 40px;
+	margin: auto;
+	margin-bottom: 110px;
+}
+
+
+
+#search{
+	display: inline-block;
+	float: left;
+	background-color: #fff; 
+	width: 80%;
+	padding-top: 5px;
+	font-size: 25px;
+	border: none;
+	border-radius: 2em;
+	margin-left: 10px;
+}
+
+
+
+#loupe{
+	display: inline-block;
+	float: right;
+	margin-top: 6px;
+	margin-right: 10px;
+	width: 24px;
+	height: 24px;
+	background-image: url(../img/icon/loupe.png);
+	background-repeat: no-repeat;
+	background-color: #fff;
+	border-color: #fff;
+	cursor: pointer;
+	border: 0;
+}
+
+/*****************************publications des administrateurs*************************/
+
+.publi-social{
+
+	margin: auto;
+	margin-top: 40px;
+	width: 85%;
+}
+
+.entete-publi{
+	width: 100%;
+	display: inline-block;
+	text-align: justify;
+
+}
+
+.titre-publi{
+	display: inline;
+	width: 60%;
+	float: left;
+	color: rgb(0, 54, 106);
+}
+
+.info-publi{
+	display: inline;
+	float: right;
+	padding-top: 10px;
+	color: rgb(0, 54, 106);
+	font-weight: bold;
+	font-style: italic;
+	font-size: 0.8em;
+}
+
+.contenu-publi{
+	color: rgb(0, 54, 106);
+	margin-bottom: 60px;
+}
+
+
+/************************ FORMULAIRES *******************************/
+.container-form{
+	width: 57%;
+	margin: auto;
+	text-align: center;
+	padding-bottom: 30px;
+	padding-top: 10px;
+}
+
+
+
+.formulaires{
+	width: 100%;
+	margin: auto;
+	padding-bottom: 30px;
+	text-align: left;
+	margin-top: 70px;
+	border: 4px solid rgb(0,93,183);
+	border-radius: 10px;
+	background-color: rgb(229, 245, 255);;
+}
+
+
+
+/*titre du formulaire*/
+.formtitle{
+	text-align: center;
+	font-family:  Arial, Comic Sans MS, Impact, sans-serif;
+	font-size: 25px;
+	color: rgb(0,93,183);
+	margin-top: 15px;
+}
+
+
+
+/*designations des zones de texte*/
+.labelactu{
+	width: 22%;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	margin-left: 10%;
+	font-family:  Arial, Comic Sans MS, Impact, sans-serif;
+	color: rgb(0,93,183);
+	font-size: 18px;
+}
+
+/*stylisation des zones en ajax*/
+.labelAjout{
+	width: 22%;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	margin-left: 5%;
+	font-family:  Arial, Comic Sans MS, Impact, sans-serif;
+	color: rgb(0,93,183);
+	font-size: 16px;
+	font-style: italic;
+}
+
+#modifIcone{
+	width: 18%;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 25px;
+	margin-bottom: 50px;
+	margin-left: 10%;
+	margin-right: 4%;
+	font-family:  Arial, Comic Sans MS, Impact, sans-serif;
+	color: rgb(0,93,183);
+	font-size: 18px;
+}
+
+#insertIcone{
+	width: 57%;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 25px;
+	margin-bottom: 15px;
+	font-family:  Arial, Comic Sans MS, Impact, sans-serif;
+	color: rgb(0,93,183);
+	font-size: 16px;
+	font-style: italic; 
+}
+
+.containerAdd{
+	margin-top: 10px;
+	margin-right: 7%;
+	margin-left: 10%;
+	padding-bottom: 15px;
+	background-color: rgb(204, 218, 227);;
+}
+
+/* label de l'insertion de document sur la page "gestion d'une categorie"*/
+.labelAjoutCat{
+	margin-left: 10%;
+}
+
+
+
+/*date du publication*/
+.date-publi{
+	font-style: italic;
+	color: rgb(0,93,183);
+	margin-left: 33%;
+}
+
+
+/*zone de texte pour le titre de l'article*/
+.design-form{
+	margin-top: 25px;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	border: 1px solid rgb(0,93,183);
+	border-radius: 2em;
+	height: 20px;
+	width: 60%;
+	font-family:  Arial, Comic Sans MS, Impact, sans-serif;
+	font-size: 18px;
+}
+
+
+
+/* zone de texte pour la publication de l'article*/
+.public-article{
+	margin-top: 25px;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	padding-top: 3px;
+	border: 1px solid rgb(0,93,183);
+	border-radius: 10px;
+	width: 60%;
+	height: 250px;
+	font-family:  Arial, Comic Sans MS, Impact, sans-serif;
+	font-size: 18px;
+	resize: none;
+}
+
+
+
+/*bouton de publication de l'article*/
+.publication{
+	margin-left: 45%;
+	margin-top: 20px;
+	height: 30px;
+	width: 10%;
+	border: 2px solid rgb(0,93,183);
+	border-radius: 2em;
+	background-color: rgb(0,93,183);
+	color: white;
+	font-family:  Arial, Comic Sans MS, Impact, sans-serif;
+	font-size: 18px;
+
+}
+
+
+
+.publication:hover{
+	background-color: rgb(0, 113, 222);
+}
+
+/*bouton suppression et modification d'un article*/
+.modif{
+	margin-left: 33%;
+	margin-right: 1%;
+	margin-top: 20px;
+	height: 30px;
+	width: 15%;
+	border: 2px solid rgb(0,93,183);
+	border-radius: 2em;
+	background-color: rgb(0,93,183);
+	color: white;
+	font-family:  Arial, Comic Sans MS, Impact, sans-serif;
+	font-size: 18px;
+}
+
+
+
+.modif:hover{
+	background-color: rgb(0, 113, 222);
+}
+
+
+
+.suppr{
+	margin-left: 1%;
+	margin-right: 33%;
+	margin-top: 20px;
+	height: 30px;
+	width: 15%;
+	border: 2px solid rgb(183,0,0);
+	border-radius: 2em;
+	background-color: rgb(183,0,0);
+	color: white;
+	font-family:  Arial, Comic Sans MS, Impact, sans-serif;
+	font-size: 18px;
+}
+
+
+
+.suppr:hover{
+	background-color: rgb(237,0,0);
+}
+
+
+/*stylisation des champs select des applications*/
+.select-logiciel {
+	margin-top: 23px;
+	height: 25px;
+	width: 61%;
+	font-family:  Arial, Comic Sans MS, Impact, sans-serif;
+	font-size: 18px;
+}
+
+/*stylisation des champs selects de dates sur les publications*/
+.select-month{
+	margin-top: 23px;
+	margin-bottom: 25px;
+	height: 25px;
+	width: 12%;
+	font-family:  Arial, Comic Sans MS, Impact, sans-serif;
+	font-size: 18px;
+}
+
+.select-years{
+	margin-top: 23px;
+	margin-bottom: 25px;
+	height: 25px;
+	width: 7%;
+	font-family:  Arial, Comic Sans MS, Impact, sans-serif;
+	font-size: 18px;
+}
+
+.date-search{
+	height: 25px;
+	width: 13%;
+	margin-left: 5%;
+	border: 2px solid rgb(0,93,183);
+	border-radius: 2em;
+	background-color: rgb(0,93,183);
+	color: white;
+	font-family:  Arial, Comic Sans MS, Impact, sans-serif;
+	font-size: 16px;
+}
+
+/*radio formulaire kesako*/
+.blocRadio{
+	padding-left: 32%;
+	margin-top: 30px;
+}
+
+.labelRadio{
+	color: rgb(0,93,183);
+	font-size: 18px;
+	margin-right: 20%;
+}
+
+input[type=radio]{
+	margin-top: 3px;
+}
+
+
+.btnparcourir{
+	margin-top: 25px;
+}
+
+/*bouton d'insertion d'une nouvelle fiche Kesako*/
+.insertion{
+	margin-left: 45%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	height: 30px;
+	width: 13%;
+	border: 2px solid rgb(0,93,183);
+	border-radius: 2em;
+	background-color: rgb(0,93,183);
+	color: white;
+	font-family:  Arial, Comic Sans MS, Impact, sans-serif;
+	font-size: 18px;
+}
+
+.insertion:hover{
+	background-color: rgb(0, 113, 222);
+}
+
+/*bloc de boutons gestion categories,fiche...*/
+.btn-adminKesako{
+	display: block;
+	background-color: rgb(229, 245, 255);
+	border: 2px solid rgb(0,93,183);
+	border-radius: 2em;
+	margin-top: 30px;
+	margin-right: 15%;
+	margin-left: 35%;
+	height: 25px;
+	width: 30%;
+	font-family:  Arial, Comic Sans MS, Impact, sans-serif;
+	font-size: 18px;
+	text-align: center;
+	color: rgb(0,93,183);
+	text-decoration: none;
+}
+
+.btn-adminKesako:hover{
+	background-color: rgb(0,93,183);
+	color: #ffffff;
+}
+
+/*list des fichiers à supprimer*/
+.filedel{
+	margin-top: 20px;
+	float: left;
+}
+
+.imgDL{
+	margin-left: 20px;
+	margin-top: 10px; 
+}
+
+.delfile{
+	width: 22%;
+	float: left;
+	vertical-align: top;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	margin-left: 10%;
+	font-family:  Arial, Comic Sans MS, Impact, sans-serif;
+	color: rgb(0,93,183);
+	font-size: 18px;
+}
+
+.btndelfile{
+	padding-top: 120px;
+	margin-bottom: 30px;
+}
+
+#btndelfile{
+	padding-top: 0px;
+}
+
+.gestionretour{
+	margin-top: 30px;
+	margin-right: 15%;
+	margin-left: 35%;
+	height: 30px;
+	width: 30%;
+	background-color: rgb(229, 245, 255);
+	border: 2px solid rgb(0,93,183);
+	border-radius: 2em;
+	color: rgb(0,93,183);
+	font-family:  Arial, Comic Sans MS, Impact, sans-serif;
+	font-size: 18px;
+}
+
+/************************ RESULTAT DES RECHERCHES *******************************/
+
+#resultsearch{
+	margin-top: 100px;
+}
+
+.resultList{
+	list-style: none;
+	padding-left: 0;
+	margin-left: -4%;
+	margin-bottom: 20px;
+}
+
+/************************ ARBORESCENCE DE KESAKO *******************************/
+.blocArboSC{
+	text-align: left;
+	margin-top: 120px;
+}
+
+.arboSC{
+	font-family:  Arial, Comic Sans MS, Impact, sans-serif;
+	font-size: 23px;
+	font-weight: bold;
+	margin-left: 0;
+	padding-bottom: 10px;
+}
+
+.arboFiche{
+	color: #1F2DE3;
+	margin-left: 100px;
+	margin-top: 8px;
+	font-family:  Arial, Comic Sans MS, Impact, sans-serif;
+	font-size: 18px;
+}
+
+.arboImg{
+	padding-right: 15px;
+}
+
+/************************ AFFICHAGE DE LA FICHE KESAKO *******************************/
+.containerFiche{
+	text-align: center;
+	margin-top: 120px;
+	color: rgb(0, 54, 106);
+}
+
+.contenuFiche{
+	margin-bottom: 70px;
+}
+
+.listfile{
+	float: left;
+	color: rgb(0, 54, 106);
+	padding: 10px;
+}
+
+.linkfile{
+	float: left;
+	font-family:  Arial, Comic Sans MS, Impact, sans-serif;
+	color: rgb(0, 54, 106);
+	padding: 10px;
+	padding-right: 50px;
+}
